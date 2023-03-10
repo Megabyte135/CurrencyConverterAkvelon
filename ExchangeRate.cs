@@ -7,7 +7,7 @@ public class ExchangeRate
     public CurrencyPair CurrencyPair { get; set; }
     public float Rate { get; set; }
 
-    public void SaveRate()
+    public void SaveRateInPair()
     {
         CurrencyPair.BaseCurrency.AddExchangeRate(this);
         CurrencyPair.CounterCurrency.AddExchangeRate(this);

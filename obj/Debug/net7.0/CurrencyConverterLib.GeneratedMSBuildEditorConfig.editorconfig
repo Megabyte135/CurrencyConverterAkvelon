@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CurrencyConverterLib
-build_property.ProjectDir = C:\Users\User\RiderProjects\CurrencyConverterLib\CurrencyConverterLib\
+build_property.ProjectDir = /home/baisangur/Project/

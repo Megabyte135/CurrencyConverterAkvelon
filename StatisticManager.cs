@@ -2,7 +2,7 @@ namespace CurrencyConverterLib;
 
 public class StatisticManager
 {
-    public List<ExchangeRate> ExchangeRates;
+    public IEnumerable<ExchangeRate> ExchangeRates;
     public float GetChangesPercentBetweenDates(CurrencyPair currencyPair, DateOnly firstDate, DateOnly lastDate)
     {
         float firstDayRate = ExchangeRates

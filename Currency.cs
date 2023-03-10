@@ -7,19 +7,26 @@ public class Currency
     public string CurrencyCode { get; set; }
     public string CurrencySymbol { get; set; }
     public Country Country { get; set; }
-    public List<ExchangeRate> ExchangeRates { get; set; }
+    public IEnumerable<ExchangeRate> ExchangeRates
+    {
+        get
+        {
+            return _exchangeRates;
+        }
+    }
+    private List<ExchangeRate> _exchangeRates { get; set; }
 
     public void AddExchangeRate(ExchangeRate exchangeRate)
     {
         if (IsValid(exchangeRate))
         {
-            ExchangeRates.Add(exchangeRate);
+            _exchangeRates.Add(exchangeRate);
         }
     }
 
     private bool IsValid(ExchangeRate exchangeRate)
     {
-        if (IsExist(exchangeRate))
+        if (IsSameRateExist(exchangeRate))
         {
             return false;
         }
@@ -27,9 +34,9 @@ public class Currency
         return true;
     }
 
-    private bool IsExist(ExchangeRate exchangeRate)
+    private bool IsSameRateExist(ExchangeRate exchangeRate)
     {
-        if (ExchangeRates
+        if (_exchangeRates
                 .Where(u => u.Date == exchangeRate.Date)
                 .FirstOrDefault(u => u.CurrencyPair.IsSame(exchangeRate.CurrencyPair)) == null)
         {

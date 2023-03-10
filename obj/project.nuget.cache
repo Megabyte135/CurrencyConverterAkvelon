@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lWK84kTxPBeUJJAqAOoANgK74JeWrNoR67edABsvVQjHJzTRzKIZ0cGNO6kvIPmdn4DKmd6OGrKue1ZTbKY2tg==",
+  "dgSpecHash": "OZd1pGTV0UokUFKhD0NrX4xwp0BfTWOlxBciSDKOntu+htTOQK/sdwa/mTqNKFSoCEkgNH3kqlMjD7BMbgYwdg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\RiderProjects\\CurrencyConverterLib\\CurrencyConverterLib\\CurrencyConverterLib.csproj",
+  "projectFilePath": "/home/baisangur/Project/CurrencyConverterLib.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
